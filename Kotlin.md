@@ -235,3 +235,7 @@ Kotlin's not null assertion operator !! can be used to force a nullable variable
 val myString: String? = null
 val length = myString!!.length
 ```
+
+## Activity Lifecycle
+![image](https://user-images.githubusercontent.com/96427746/233574573-afdedf12-8a33-4072-b112-2c0c499a0fc8.png)
+
