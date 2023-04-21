@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    android:padding="15dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        android:text="Calculate Your AGE"
+        android:textAlignment="center"
+        android:textColor="#AE0C0C"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:textColor="#AE0C0C"
+        android:padding="0dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="in Minutes/Hours/Days/Months/Years"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/buttonDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Select your Birth Date" />
+
+    <TextView
+        android:id="@+id/selectedDateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textColor="#AE0C0C"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="--/--/----"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/showYourDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/lightGrey"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Your Selected Date"
+        android:textAlignment="center"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/groupRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioButtonYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="in Years" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="in Months" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="in Days" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="in Hours" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMinute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="in Minutes" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:backgroundTint="@color/purple_700"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Your age is"
+        android:textAlignment="center"
+        android:textColor="@color/lightGrey"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resultAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="-------"
+        android:textAlignment="center"
+        android:textColor="#AE0C0C"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
