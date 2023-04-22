@@ -11,14 +11,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var count:Int = 0;
+        val button:Button = findViewById<Button>(R.id.buttonClick)
+        val text:TextView = findViewById<TextView>(R.id.textView3)
 
-        var button:Button = findViewById<Button>(R.id.buttonClick)
-        var text:TextView = findViewById<TextView>(R.id.textView3)
+
+        var count:Int = 0;
 
         button.setOnClickListener {
             count+=1
-            text.text = roman(count);
+            text.text = roman(count)
         }
     }
 
@@ -61,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             sb.append('X')
             n -= 10
         }
-        if (n === 9) {
+        if (n == 9) {
             sb.append("IX")
             return sb.toString()
         }
@@ -69,7 +70,7 @@ class MainActivity : AppCompatActivity() {
             sb.append('V')
             n -= 5
         }
-        if (n === 4) {
+        if (n == 4) {
             sb.append("IV")
             return sb.toString()
         }
